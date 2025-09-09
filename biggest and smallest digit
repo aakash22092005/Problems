@@ -1,0 +1,14 @@
+package programs;
+import java.util.Scanner;
+public class biggestandsmallestdigit {
+	public static void main(String[] args) {
+	int n=2345, digit, maxdigit=0 , mindigit=9;
+		while(n>0) {
+			digit = n %10;
+			if(maxdigit < digit) maxdigit = digit;
+			if(mindigit > digit) mindigit = digit;
+			n /=10;
+		}
+		System.out.print(maxdigit +" "+ mindigit);
+	}
+}
