@@ -1,0 +1,23 @@
+package programs;
+import java.util.Scanner;
+public class strongNumber {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt(), temp=n, digit, fact, sum=0;
+		while(n>0) {
+			digit = n %10;
+			fact =1;
+			for(int i=1; i<=digit; i++) {
+				fact *=i;
+			}
+			sum +=fact;
+			n /= 10;
+		}
+		if(sum == temp) {
+			System.out.print("Strong");
+		} else {
+			System.out.print("Not a Strong");
+		}
+		sc.close();
+	}
+}
