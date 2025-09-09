@@ -1,0 +1,16 @@
+package programs;
+//import java.util.*;
+public class prob1 {
+	public static boolean isEvenModulo(int n) {
+		return n%2==0;
+	}
+	public static boolean isOddModulo(int n) {
+		return n%2 != 0;
+	}
+	public static void main(String[] args) {
+		System.out.println(isEvenModulo(4));
+		System.out.println(isOddModulo(5));
+	}
+
+	}
+	
