@@ -1,0 +1,21 @@
+package programs;
+import java.util.Scanner;
+public class harshad {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int digit,sum=0, temp=n;
+		while(n>0) {
+			digit=n%10;
+			sum+=digit;
+			n=n/10;			
+		}
+		if(temp%sum==0) {
+			System.out.print("harshad number");
+		}
+			else {
+				System.out.print("not harshad number");
+			}
+		}
+	}
